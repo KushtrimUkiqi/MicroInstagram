@@ -1,0 +1,5 @@
+<section  [ngClass]="displayType === displayTypeEnum.GRID ? 'display-grid photos-container' : 'display-vertically photos-container'">
+    <div  *ngFor="let photo of photos" [routerLink]="['/photo' , photo.id]">
+        <app-photo [photo]='photo' [displayType]='displayType'></app-photo>
+    </div>
+</section>

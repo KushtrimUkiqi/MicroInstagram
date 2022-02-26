@@ -1,0 +1,35 @@
+#display-type
+{
+    width: 30vh;
+    margin: auto;
+    padding: 2vh;
+    
+}
+
+#display-type p
+{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#types
+{
+    padding: .5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type
+{
+    padding: 0 1vw;
+    border-bottom:1px solid transparent;
+}
+
+.border-bottom
+{
+    border-color: gray;
+    transition: ease-in;
+    transition-delay: .2s;
+}

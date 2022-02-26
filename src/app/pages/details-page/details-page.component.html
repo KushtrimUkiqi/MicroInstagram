@@ -1,0 +1,9 @@
+<section *ngIf="photo" id="photo-details">
+    <div class="photo-data">
+        <div class="options">edit </div>
+        <div class="title"><h4>{{photo.title}}</h4></div>
+    </div>
+    <div class="photo">
+        <img [src]='photo.url' alt="">
+    </div>
+</section>

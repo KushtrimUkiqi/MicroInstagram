@@ -1,0 +1,28 @@
+.error-page , .home-page-link
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.error-page
+{
+   
+
+}*/
+
+.home-page-link
+{
+font-family: Sacramento;
+font-style: normal;
+font-weight: normal;
+font-size: 47px;
+line-height: 0px;
+color: #D77F7F;
+} 
+
+.home-page-link p:hover
+{
+    color: #ffb5b5;
+}

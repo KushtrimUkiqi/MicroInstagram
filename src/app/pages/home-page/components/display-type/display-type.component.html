@@ -1,0 +1,12 @@
+<section id="display-type">
+    <p>Display as</p>
+    <div id="types">
+        <div (click)="setType(displayTypeEnum.GRID)"  [ngClass]="displayType === displayTypeEnum.GRID ? 'type border-bottom' : 'type'">
+            <img [src]='displayGridImageURL' alt="">
+        </div>
+        
+        <div (click)="setType(displayTypeEnum.VERTICALLY)"  [ngClass]="displayType === displayTypeEnum.VERTICALLY ? 'type border-bottom' : 'type'">
+            <img [src]='displayVerticallyImageURL' alt="">                       
+        </div>
+    </div>
+</section>

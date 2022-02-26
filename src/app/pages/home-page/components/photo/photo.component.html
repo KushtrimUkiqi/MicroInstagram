@@ -1,0 +1,4 @@
+<div *ngIf="photo"  [ngClass]="displayType === displayTypeEnum.GRID ? 'photo-display-grid' : 'photo-display-vertically'">
+    <img [src]="photo.thumbnailUrl" alt=""/>
+    <div [ngClass]="displayType === displayTypeEnum.GRID ? 'title-display-grid' : 'title-display-vertically'">{{photo.title}}</div>
+</div>

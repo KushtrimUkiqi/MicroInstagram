@@ -1,0 +1,69 @@
+.photo-display-grid
+{   width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.photo-display-vertically
+{   width: 70vw;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    margin-bottom: 4px;
+}
+
+img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.photo-display-grid:hover .title-display-grid
+{
+    opacity: 1;
+    animation: displayTitleAnimation .5s;
+}
+
+@keyframes displayTitleAnimation
+{
+    from {
+        height: 0;
+        top: 150px;
+    }
+
+    to {
+        height: 100%;
+        top: 80px;
+    }
+}
+
+.title-display-grid
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 12px;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    opacity: 0;
+    top: 80px;
+}
+
+
+.photo-display-vertically img
+{
+    height: 300px;
+    width: 300px;
+}
+
+.title-display-vertically
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 2% ;
+}

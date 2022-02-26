@@ -1,0 +1,21 @@
+#navbar
+{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    background-color: white;
+}
+
+#pages
+{
+    margin-top: 10vh;
+    z-index: 0;
+}
+
+
+
+
+
+
