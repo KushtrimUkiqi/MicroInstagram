@@ -1,0 +1,55 @@
+
+.dialog
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-body
+{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 15px 0;
+}
+
+
+
+.dialog-body p 
+{
+    text-align: center;
+}
+
+
+
+.group-horizontly
+{
+    padding: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.group-horizontly button
+{
+    height: 24px;
+    width: 40px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+}
+
+.group-horizontly button:hover
+{
+    background-color: var(--main-color-on-hover);
+}

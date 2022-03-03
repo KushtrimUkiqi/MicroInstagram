@@ -26,12 +26,33 @@ ul li
 @media only screen and (max-width: 768px) {
     nav
     {
-        padding: 10px 1% 0 1%;
+        padding: 7px 1% 0 0%;
     }
     .img-logo
     {
         margin:0;
         padding: 0;
+    }
+
+    .img-logo img
+    {
+        padding: 0 7px;
+        height: 23px;
+        width: auto;
+    }
+
+    li
+    {
+        width: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    li img 
+    {
+        width: 18px;
+        height: 18px;
     }
   }
 

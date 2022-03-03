@@ -1,0 +1,15 @@
+.iterator-container
+{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    padding: 3vh 0;
+    margin: auto;
+}
+
+.image-arrow-container
+{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}

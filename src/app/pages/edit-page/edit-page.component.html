@@ -1,0 +1,42 @@
+<section *ngIf="photo">
+
+        <div class="form-group">
+            <span class="error" *ngIf="formErrorObject.albumError">Please provide an album number</span>
+            <label for="albumId">Album id</label>
+            <input  id="albumId" type="number" min="1" [(ngModel)]="photo.albumId">
+        </div>
+
+        <div class="form-group">
+            <span class="error" *ngIf="formErrorObject.titleError">Please provide a title</span>
+            <label for="title">Title</label>
+            <input id="title" type="text" [(ngModel)]="photo.title">
+        </div>
+
+    
+        <div class="form-group">
+            <span class="error" *ngIf="formErrorObject.thumbnailError" >Please upload a thumbnail photo</span>
+            <label for="thumbnailUrl">Upload thumbnail image</label>
+            <input id="thumbnailUrl" type="file" (change)="onThumbnailFileSelected($event)"  accept="image/png, image/jpeg" />
+        </div>
+
+  
+        <div class="form-group">
+            <span class="error" *ngIf="formErrorObject.imageError">Please upload a photo</span>
+            <label for="url">Upload image</label>
+            <input id="url" type="file" (change)="onImageFileSelected($event)" accept="image/png, image/jpeg"/>
+        </div>
+
+        <div class="buttons-group"> 
+            <input (click)="submit()" id="submit" type="button" value="Save"/>
+            <input (click)="reset()" id="reset" type="button" value="Reset"/>
+        </div>
+    
+</section>
+
+<app-loading *ngIf="loading"></app-loading>
+<app-notification-dialog 
+    (click)="closeNotificationDialog()"
+    [notificationText]="displayNotificationText" 
+    [displayNotification]="displayNotification" >
+
+</app-notification-dialog>

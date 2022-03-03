@@ -1,0 +1,8 @@
+<div class="iterator-container">
+    <div class="image-arrow-container">
+        <img *ngIf="back" [src]="backImageURL" alt="" (click)="move(IterateImages.BACK)"/>
+    </div>
+    <div class="image-arrow-container">
+    <img *ngIf="forward"  [src]="forwardImageURL" alt="" (click)="move(IterateImages.FORWARD)"/>
+</div>
+</div>

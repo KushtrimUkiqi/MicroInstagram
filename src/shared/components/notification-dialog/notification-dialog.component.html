@@ -1,0 +1,8 @@
+<div class="dialog" *ngIf="displayNotification">
+    <div class="dialog-body">
+        <p>{{notificationText}}</p>
+        <div class="group-horizontly">
+            <button (click)="closeNotification()" >Yes</button>
+        </div>
+    </div>
+</div>

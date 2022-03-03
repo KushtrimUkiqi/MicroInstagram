@@ -1,5 +1,7 @@
-<section  [ngClass]="displayType === displayTypeEnum.GRID ? 'display-grid photos-container' : 'display-vertically photos-container'">
-    <div  *ngFor="let photo of photos" [routerLink]="['/photo' , photo.id]">
+<section *ngIf="!loading" [ngClass]="displayType === displayTypeEnum.GRID ? 'display-grid photos-container' : 'display-vertically photos-container'">
+    <div  *ngFor="let photo of photosToDisplay" [routerLink]="['/photo' , photo.id]">
         <app-photo [photo]='photo' [displayType]='displayType'></app-photo>
     </div>
 </section>
+<app-loading *ngIf="loading"></app-loading>
+<app-item-iterator (moveDirection)="move($event)" *ngIf="!loading" [back]="back" [forward]="forward"></app-item-iterator>
